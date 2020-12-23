@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="azul">#124DA5</color>
+    <color name="amarelo">#FFC107</color>
+    <color name="laranja_enel">#FD4400</color>
+    <color name="vermelho">#CD0000</color>
+
+
+    <style name="laranja_enel">
+        <item name="android:colorControlActivated">@color/laranja_enel</item>
+    </style>
+</resources>

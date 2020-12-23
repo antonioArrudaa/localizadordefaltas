@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">ENEL - LOC. DE FALTA 2</string>
+    <string name="title_activity_mapeamento">MapeamentoActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_maps2">Map</string>
+
+
+    <!--Mensagens de erros-->
+    <string name="erro_inserir_ocorrencia">Insira os detalhes da ocorrência.</string>
+
+
+
+
+    <!--NOME DO APP EM TITULO-->
+    <string name="nomeDoAppTituloTablet">LOCALIZAÇÃO DE FALTA</string>
+    <string name="nomeDoAppTituloMobile">LOC. DE FALTA</string>
+
+    <!--TITULOS DE TELAS-->
+    <string name="tituloTelaAjusteInicial">AJUSTE INICIAL</string>
+    <string name="tituloTelaModoOffiline">MODO OFFILINE</string>
+    <string name="tituloTelaModoValidaToken">INSIRA SEU BR0 ABAIXO</string>
+    <string name="tituloTelaConsultar">CONSULTAR</string>
+    <string name="tituloCadastroColaborador">CADASTRO COLABORADOR</string>
+    <string name="tituloTelaAtualizaLDF">ATUALIZAÇÃO</string>
+
+
+    <!--SUBTEXTOS DE TELAS-->
+    <string name="subTextoTelaAjusteInicial">Atenção: ADICIONE O HOST DE ONDE ESTA LOCALIZADO A PLATAFORMA LOC. DE FALTA ABAIXO</string>
+    <string name="subTextoTelaNetWork">Dispositivo sem conexão com a internet. Verifique se o Wifi ou Dados Movéis estão habilitados neste dispositivo.</string>
+
+    <!--CAMPUS OBRIGATORIOS-->
+    <string name="subTextoCampoObrigatorioConsulta">* Preencha os campos para realizar a consulta.</string>
+    <string name="subTextoCampoObrigatorioPorcentagem">* Porcentagem de calculo, os valores adicionarão resultados para mais e para menos.</string>
+    <string name="subTextoCampoObrigatorioCadColaborador">* Insira os dados abaixo para adicionar um novo colaborador.</string>
+
+    <!--TEXTO BOTÕES-->
+    <string name="btnTextoSalvarEcontinuar">SALVAR E CONTINUAR</string>
+    <string name="btnTextoSalvar">SALVAR</string>
+    <string name="btnTextoAtualizar">ATUALIZAR</string>
+    <string name="btnTextoVoltarTelaInicial">VOLTAR A TELA INICIAL</string>
+    <string name="btnTextoUsarModoOffiline">USAR MODO OFFILINE</string>
+    <string name="btnTextoConsultar">CONSULTAR</string>
+    <string name="btnTextoRelatorios">RELATÓRIOS</string>
+    <string name="btnTextoAtualizaLDF">ATUALIZAR LDF</string>
+    <string name="btnTextoCadColaborador">CAD. COLABORADOR</string>
+    <string name="btnTextoAjustesDeDadosTablet">AJUSTES DE DADOS</string>
+    <string name="btnTextoAjustesDeDadosMobile">AJUSTES</string>
+    <string name="btnTextoSair">SAIR</string>
+    <string name="btnTextoGerarConsultaLDF">Gerar consulta de LdF</string>
+    <string name="btnTextoCapturaTokenDispositivo">Obter Chave do Dispositivo</string>
+    <string name="btnTextoVerDados">VER DADOS PARA ACESSO</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--CHAVE CHANNEL-->
+    <string name="default_notification_channel_id">1</string>
+
+
+    <string name="quickstart_message">Click the SUBSCRIBE TO WEATHER button below to subscribe to the
+        weather topic. Messages sent to the weather topic will be received. The LOG TOKEN button logs the
+        FCM registration token to logcat.</string>
+    <string name="subscribe_to_weather">Subscribe To Weather</string>
+    <string name="log_token">Log Token</string>
+
+    <string name="msg_subscribed">Subscribed to weather topic</string>
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+
+    <!--
+        This is the name that users will see when interacting with this channel.
+        It should describe the category of notifications that will be sent through this channel
+     -->
+    <!-- [START fcm_default_icon_string] -->
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <!-- [END fcm_default_icon_string] -->
+    <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
+    <string name="fcm_message">FCM Message</string>
+</resources>

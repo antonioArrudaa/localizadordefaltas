@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "57184931823",
+    "firebase_url": "https://enel---localizador-de-falta.firebaseio.com",
+    "project_id": "enel---localizador-de-falta",
+    "storage_bucket": "enel---localizador-de-falta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57184931823:android:4a25b9d4b46a4d2556301a",
+        "android_client_info": {
+          "package_name": "com.enel_locdefalta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "57184931823-numccgbj95siupplf64g4la6obeoph7t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.enel_locdefalta",
+            "certificate_hash": "436f33f2f3c3d5abd57eadbc32e59e18987facae"
+          }
+        },
+        {
+          "client_id": "57184931823-61bvefftum7uesc5ko5160nq5be331gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF07Wde1RYk8Cmzxuinn7n1_8-nq_YE9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "57184931823-61bvefftum7uesc5ko5160nq5be331gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

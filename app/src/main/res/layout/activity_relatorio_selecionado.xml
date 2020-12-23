@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundodash"
+    tools:context=".view.RelatorioSelecionadoActivity">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="RELATORIO DE CONSULTA"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_voltar2"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginStart="8dp"
+        android:drawingCacheQuality="high"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView15"
+        app:srcCompat="@drawable/ic_left" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/viewColaborador"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textinputview"
+                android:ems="10"
+                android:paddingTop="16dp"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="BR0069963473"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textSize="35sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewColaborador"
+                app:layout_constraintEnd_toEndOf="@+id/viewColaborador"
+                app:layout_constraintStart_toStartOf="@+id/viewColaborador"
+                app:layout_constraintTop_toTopOf="@+id/viewColaborador" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="BR Colaborador"
+                android:textColor="@color/azul"
+                app:layout_constraintBottom_toBottomOf="@+id/viewColaborador"
+                app:layout_constraintEnd_toEndOf="@+id/viewColaborador"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/viewColaborador"
+                app:layout_constraintTop_toTopOf="@+id/viewColaborador"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/viewAlimentador"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textinputview"
+                android:editable="false"
+                android:ems="10"
+                android:paddingTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewColaborador" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="TME01P2"
+                android:textColor="@color/azul"
+                android:textSize="35sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewAlimentador"
+                app:layout_constraintEnd_toEndOf="@+id/viewAlimentador"
+                app:layout_constraintStart_toStartOf="@+id/viewAlimentador"
+                app:layout_constraintTop_toTopOf="@+id/viewAlimentador" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Alimentador"
+                android:textColor="@color/azul"
+                app:layout_constraintBottom_toBottomOf="@+id/viewAlimentador"
+                app:layout_constraintEnd_toEndOf="@+id/viewAlimentador"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/viewAlimentador"
+                app:layout_constraintTop_toTopOf="@+id/viewAlimentador"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/viewReligador"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textinputview"
+                android:ems="10"
+                android:paddingTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewAlimentador" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu"
+                android:text="RLU01N6"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textSize="35sp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewReligador"
+                app:layout_constraintEnd_toEndOf="@+id/viewReligador"
+                app:layout_constraintStart_toStartOf="@+id/viewReligador"
+                app:layout_constraintTop_toTopOf="@+id/viewReligador" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Religador"
+                android:textColor="@color/azul"
+                app:layout_constraintBottom_toBottomOf="@+id/viewReligador"
+                app:layout_constraintEnd_toEndOf="@+id/viewReligador"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/viewReligador"
+                app:layout_constraintTop_toTopOf="@+id/viewReligador"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="286dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textinputview"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="16dp"
+                android:text="HORARIO"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/editText6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/editText6"
+                app:layout_constraintTop_toTopOf="@+id/editText6" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Horário"
+                android:textColor="@color/azul"
+                app:layout_constraintBottom_toBottomOf="@+id/editText5"
+                app:layout_constraintEnd_toEndOf="@+id/editText5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editText5"
+                app:layout_constraintTop_toTopOf="@+id/editText5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="286dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/textinputview"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="16dp"
+                android:text="DATA_SER"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/viewReligador"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewReligador" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Data "
+                android:textColor="@color/azul"
+                app:layout_constraintBottom_toBottomOf="@+id/editText6"
+                app:layout_constraintEnd_toEndOf="@+id/editText6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editText6"
+                app:layout_constraintTop_toTopOf="@+id/editText6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/textinputview"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="16dp"
+                android:text="VER DESCRIÇÃO"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="@+id/viewReligador"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Descrição"
+                android:textColor="@color/azul"
+                app:layout_constraintBottom_toBottomOf="@+id/editText7"
+                app:layout_constraintEnd_toEndOf="@+id/editText7"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editText7"
+                app:layout_constraintTop_toTopOf="@+id/editText7"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textinputview"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingTop="16dp"
+                android:text="VER LOCALIZAÇÃO"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Localização"
+                android:textColor="@color/azul"
+                app:layout_constraintBottom_toBottomOf="@+id/editText9"
+                app:layout_constraintEnd_toEndOf="@+id/editText9"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editText9"
+                app:layout_constraintTop_toTopOf="@+id/editText9"
+                app:layout_constraintVertical_bias="0.0"
+                android:fontFamily="@font/ubuntu" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textinputview"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/textinputview"
+                android:editable="false"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText8" />
+
+
+            <!-- <TextView
+
+                 android:id="@+id/textView19"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="16dp"
+                 android:background="@drawable/textinputview"
+                 android:text="TextView"
+                 app:layout_constraintEnd_toEndOf="@+id/editText5"
+                 app:layout_constraintStart_toStartOf="@+id/editText6"
+                 app:layout_constraintTop_toBottomOf="parent" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

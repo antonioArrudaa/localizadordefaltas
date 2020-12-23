@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundodash"
+    android:orientation="vertical"
+    tools:context=".MVC.VIEW.CONSULTALDF.ConsultarActivity">
+
+    <ImageView
+        android:id="@+id/imgView_btn_voltar"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_left"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewDataEnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/allerta"
+        android:text="enel 2020"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/allerta"
+        android:text="@string/tituloTelaConsultar"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="@string/subTextoCampoObrigatorioConsulta"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerALIMENTADOR"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textviewinfo"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <Spinner
+                android:id="@+id/spinnerRELIGADOR"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textviewinfo"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerALIMENTADOR" />
+
+
+            <EditText
+                android:id="@+id/editTextValorCurto"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textviewinfo"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:hint="V. DO CURTO"
+                android:inputType="number"
+                android:paddingEnd="8dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FF5E00"
+                android:textColorLink="#FF5E00"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/view_Curto_Informado"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerRELIGADOR" />
+
+            <View
+                android:id="@+id/view_Curto_Informado"
+                android:layout_width="150dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/textinputview"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextValorCurto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerRELIGADOR" />
+
+            <TextView
+                android:id="@+id/textView_Valor_do_Curto_Informado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="Aperte para inserir"
+                android:textColor="@color/azul"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_Curto_Informado"
+                app:layout_constraintEnd_toEndOf="@+id/view_Curto_Informado"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view_Curto_Informado"
+                app:layout_constraintTop_toTopOf="@+id/view_Curto_Informado"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView_Valor_de_Curto_Informado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="0"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/azul"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_Curto_Informado"
+                app:layout_constraintEnd_toEndOf="@+id/view_Curto_Informado"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/view_Curto_Informado"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Valor_do_Curto_Informado"
+                app:layout_constraintVertical_bias="0.9" />
+
+
+            <TextView
+                android:id="@+id/textView_Selecione_a_Porcentagem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="@string/subTextoCampoObrigatorioPorcentagem"
+                android:textAlignment="center"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/view_Curto_Informado"
+                app:layout_constraintStart_toStartOf="@+id/editTextValorCurto"
+                app:layout_constraintTop_toBottomOf="@+id/view_Curto_Informado" />
+
+            <Switch
+                android:id="@+id/switch_5_porcento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="5%    "
+                android:textSize="20sp"
+                android:theme="@style/laranja_enel"
+                app:layout_constraintEnd_toEndOf="@+id/textView_Selecione_a_Porcentagem"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="@+id/textView_Selecione_a_Porcentagem"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Selecione_a_Porcentagem" />
+
+            <Switch
+                android:id="@+id/switch_10_porcento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="10%    "
+                android:textSize="20sp"
+                android:theme="@style/laranja_enel"
+                app:layout_constraintEnd_toEndOf="@+id/textView_Selecione_a_Porcentagem"
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="@+id/textView_Selecione_a_Porcentagem"
+                app:layout_constraintTop_toBottomOf="@+id/textView_Selecione_a_Porcentagem" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="*Selecione o tipo de curto informado."
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_Resultado_Para_Mais" />
+
+
+            <Switch
+                android:id="@+id/switchTrifasico"
+                style="@style/laranja_enel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="TRIFÁSICA"
+                android:textColorHighlight="#FF5E00"
+                android:textColorLink="#FF5E00"
+                android:textCursorDrawable="@android:color/primary_text_dark"
+                android:theme="@style/laranja_enel"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <Switch
+                android:id="@+id/switchBifasica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="BIFÁSICA"
+                android:theme="@style/laranja_enel"
+                app:layout_constraintEnd_toStartOf="@+id/switchMonofasica"
+                app:layout_constraintStart_toEndOf="@+id/switchTrifasico"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+
+            <Switch
+                android:id="@+id/switchMonofasica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:text="MONOFÁSICA"
+                android:theme="@style/laranja_enel"
+                app:layout_constraintBottom_toBottomOf="@+id/switchBifasica"
+                app:layout_constraintEnd_toEndOf="@+id/textView16" />
+
+            <View
+                android:id="@+id/view_Resultado_Para_Menos"
+                android:layout_width="280dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/textinputview"
+                app:layout_constraintStart_toStartOf="@+id/editTextValorCurto"
+                app:layout_constraintTop_toBottomOf="@+id/switch_5_porcento" />
+
+            <View
+                android:id="@+id/view_Resultado_Para_Mais"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/textinputview"
+                app:layout_constraintEnd_toEndOf="@+id/view_Curto_Informado"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/view_Resultado_Para_Menos"
+                app:layout_constraintTop_toBottomOf="@+id/switch_10_porcento" />
+
+            <TextView
+                android:id="@+id/textView_title_para_menos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="Resultado para Menos"
+                android:textColor="@color/azul"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_Resultado_Para_Menos"
+                app:layout_constraintEnd_toEndOf="@+id/view_Resultado_Para_Menos"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view_Resultado_Para_Menos"
+                app:layout_constraintTop_toTopOf="@+id/view_Resultado_Para_Menos"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView_title_para_mais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="Resultado para Mais"
+                android:textColor="@color/azul"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_Resultado_Para_Mais"
+                app:layout_constraintEnd_toEndOf="@+id/view_Resultado_Para_Mais"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/view_Resultado_Para_Mais"
+                app:layout_constraintTop_toTopOf="@+id/view_Resultado_Para_Mais"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/textView_Resultado_Para_Menos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="- 0"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/azul"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_Resultado_Para_Menos"
+                app:layout_constraintEnd_toEndOf="@+id/view_Resultado_Para_Menos"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/view_Resultado_Para_Menos"
+                app:layout_constraintTop_toTopOf="@+id/view_Resultado_Para_Menos"
+                app:layout_constraintVertical_bias="0.55" />
+
+            <TextView
+                android:id="@+id/textView_Resultado_Para_Mais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="+ 0"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/azul"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/view_Resultado_Para_Mais"
+                app:layout_constraintEnd_toEndOf="@+id/view_Resultado_Para_Mais"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/view_Resultado_Para_Mais"
+                app:layout_constraintTop_toTopOf="@+id/view_Resultado_Para_Mais"
+                app:layout_constraintVertical_bias="0.55" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textViewTEXTOLISTAVAZIA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/allerta"
+        android:text="NÃO DISPONIVEL"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/listViewLDFConsulta"
+        app:layout_constraintEnd_toEndOf="@+id/listViewLDFConsulta"
+        app:layout_constraintStart_toStartOf="@+id/listViewLDFConsulta"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView5" />
+
+
+    <ListView
+        android:id="@+id/listViewLDFConsulta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_gera_ldf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView5">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_gera_ldf"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/fundobotaoazul"
+        android:drawableEnd="@drawable/ic_action_search_relatorio"
+        android:fontFamily="@font/allerta"
+        android:paddingEnd="8dp"
+        android:text="@string/btnTextoGerarConsultaLDF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDataEnel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarCarregaLDFS"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminateTint="@color/laranja_enel"
+        android:progressDrawable="@drawable/progress_bar_enel"
+        app:layout_constraintBottom_toBottomOf="@+id/listViewLDFConsulta"
+        app:layout_constraintEnd_toEndOf="@+id/listViewLDFConsulta"
+        app:layout_constraintStart_toStartOf="@+id/listViewLDFConsulta"
+        app:layout_constraintTop_toTopOf="@+id/listViewLDFConsulta" />
+
+
+    <!--
+
+
+    <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:background="@drawable/textviewinfo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/switchMonofasica"
+                app:layout_constraintStart_toStartOf="@+id/switchTrifasico"
+                app:layout_constraintTop_toBottomOf="@+id/switchBifasica" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

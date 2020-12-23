@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundodash"
+    android:orientation="vertical"
+    tools:context=".MVC.VIEW.CADCOLABORADOR.CadastroColaboradorActivity">
+
+
+    <TextView
+        android:id="@+id/textViewDataEnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/allerta"
+        android:text="enel 2020"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgViewC_btn_voltar"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:text="LOCALIZADOR DE FALTA"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgViewC_btn_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgViewC_btn_voltar"
+        app:layout_constraintTop_toTopOf="@+id/imgViewC_btn_voltar" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/common_google_signin_btn_text_dark_default"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="ADICIONANDO UM NOVO COLABORADOR"
+                android:textColor="@color/azul"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView35"
+                app:layout_constraintTop_toTopOf="@+id/imageView35" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="*Insira os dados abaixo para adicionar um novo colaborador."
+                android:textColor="#757575"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView53"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView53"
+                app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bnt_camera" />
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView35"
+                app:layout_constraintEnd_toEndOf="@+id/imageView35"
+                app:layout_constraintStart_toStartOf="@+id/imageView35"
+                app:layout_constraintTop_toTopOf="@+id/imageView35"
+                app:srcCompat="@drawable/ic_action_adiciona_colaborador_white" />
+
+            <EditText
+                android:id="@+id/editTextNomeColaborador_TABLET"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/borda_azul"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Nome do Colaborador"
+                android:inputType="textPersonName"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textColorHint="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView54"
+                app:layout_constraintStart_toStartOf="@+id/imageView35"
+                app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+            <EditText
+                android:id="@+id/editTextBrColaborador_TABLET"
+                android:layout_width="215dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/borda_azul"
+                android:ems="10"
+                android:enabled="false"
+                android:fontFamily="@font/montserrat"
+                android:hint="BR0 do Colaborador"
+                android:inputType="number"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
+                android:textColor="#DA124DA5"
+                android:textColorHint="#757575"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/editTextNomeColaborador_TABLET"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNomeColaborador_TABLET" />
+
+            <EditText
+                android:id="@+id/editTextEmpresaColaborador_TABLET"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/borda_azul"
+                android:ems="10"
+                android:enabled="false"
+                android:fontFamily="@font/montserrat"
+                android:inputType="textPersonName"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textColorHint="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/editTextNomeColaborador_TABLET"
+                app:layout_constraintStart_toEndOf="@+id/editTextBrColaborador_TABLET"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNomeColaborador_TABLET" />
+
+            <EditText
+                android:id="@+id/editTextRegiaoColaborador_TABLET"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/borda_azul"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Cidade  de Atendimento"
+                android:inputType="textPersonName"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textColorHint="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="@+id/editTextBrColaborador_TABLET"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEmpresaColaborador_TABLET" />
+
+            <EditText
+                android:id="@+id/editTextUF_TABLET"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/borda_azul"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="UF"
+                android:inputType="textPersonName|text"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textColorHint="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEmpresaColaborador_TABLET"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/editTextEmpresaColaborador_TABLET" />
+
+            <EditText
+                android:id="@+id/editTextSenhaColaborador_TABLET"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/borda_azul"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Digite uma senha númerica"
+                android:inputType="number|numberPassword"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textColorHint="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEmpresaColaborador_TABLET"
+                app:layout_constraintStart_toStartOf="@+id/editTextRegiaoColaborador_TABLET"
+                app:layout_constraintTop_toBottomOf="@+id/editTextRegiaoColaborador_TABLET" />
+
+            <EditText
+                android:id="@+id/editTextConfirmaSenhaColaborador_TABLET"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/borda_azul"
+                android:ems="10"
+                android:fontFamily="@font/montserrat"
+                android:hint="Confirme a senha númerica"
+                android:inputType="numberPassword"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textColorHint="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEmpresaColaborador_TABLET"
+                app:layout_constraintStart_toStartOf="@+id/editTextRegiaoColaborador_TABLET"
+                app:layout_constraintTop_toBottomOf="@+id/editTextSenhaColaborador_TABLET" />
+
+            <ImageView
+                android:id="@+id/imageViewVISUALIZARSENHA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                android:src="@drawable/ic_action_senha_mostra"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextSenhaColaborador_TABLET"
+                app:layout_constraintEnd_toEndOf="@+id/editTextSenhaColaborador_TABLET"
+                app:layout_constraintTop_toTopOf="@+id/editTextSenhaColaborador_TABLET" />
+
+            <EditText
+                android:id="@+id/editTextTipoDeRegistroColaborador_TABLET"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/borda_azul"
+                android:ems="10"
+                android:enabled="false"
+                android:fontFamily="@font/montserrat"
+                android:inputType="number"
+                android:paddingRight="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textColorHint="#757575"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/editTextAtivo_TABLET"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editTextRegiaoColaborador_TABLET"
+                app:layout_constraintTop_toBottomOf="@+id/editTextConfirmaSenhaColaborador_TABLET" />
+
+            <EditText
+                android:id="@+id/editTextAtivo_TABLET"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/borda_azul"
+                android:ems="10"
+                android:enabled="false"
+                android:fontFamily="@font/montserrat"
+                android:hint="Ativo"
+                android:inputType="textPersonName"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textColorHint="#757575"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/editTextConfirmaSenhaColaborador_TABLET"
+                app:layout_constraintTop_toBottomOf="@+id/editTextConfirmaSenhaColaborador_TABLET" />
+
+            <Button
+                android:id="@+id/buttonCADASTRA_TABLET"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bnt_camera"
+                android:drawableRight="@drawable/ic_action_save"
+                android:paddingRight="12dp"
+                android:text="SALVAR E ENVIAR"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/editTextAtivo_TABLET"
+                app:layout_constraintStart_toStartOf="@+id/editTextTipoDeRegistroColaborador_TABLET"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTipoDeRegistroColaborador_TABLET" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_begin="292dp"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="486dp" />
+
+            <Switch
+                android:id="@+id/switchCOLABORADOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COLABORADOR"
+                android:textColor="@color/azul"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextTipoDeRegistroColaborador_TABLET"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTipoDeRegistroColaborador_TABLET"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="@+id/editTextTipoDeRegistroColaborador_TABLET" />
+
+            <Switch
+                android:id="@+id/switchADM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADM."
+                android:textColor="@color/laranja_enel"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextTipoDeRegistroColaborador_TABLET"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/editTextTipoDeRegistroColaborador_TABLET"
+                app:layout_constraintTop_toTopOf="@+id/editTextTipoDeRegistroColaborador_TABLET" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="107dp" />
+
+            <Switch
+                android:id="@+id/switchENEL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"
+                android:text="ENEL"
+                android:textColor="@color/laranja_enel"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextEmpresaColaborador_TABLET"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toStartOf="@+id/editTextEmpresaColaborador_TABLET"
+                app:layout_constraintTop_toTopOf="@+id/editTextEmpresaColaborador_TABLET" />
+
+            <Switch
+                android:id="@+id/switchPARCEIRA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="32dp"
+                android:text="PARCEIRA"
+                android:textColor="@color/azul"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextEmpresaColaborador_TABLET"
+                app:layout_constraintEnd_toEndOf="@+id/editTextEmpresaColaborador_TABLET"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/editTextEmpresaColaborador_TABLET" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="376dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBarEnvioDeDados"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <Button
+        android:id="@+id/buttonTelaInicial"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/fundo_btn_redondo"
+        android:drawableRight="@drawable/ic_action_home"
+        android:paddingRight="8dp"
+        android:text="VOLTAR A TELA INICIAL"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDataEnel"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

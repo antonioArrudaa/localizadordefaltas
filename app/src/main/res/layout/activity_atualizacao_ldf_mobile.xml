@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundodash"
+    tools:context=".MVC.VIEW.ATUALIZAR_LDF.AtualizacaoLDFActivity">
+
+    <ImageView
+        android:id="@+id/btn_voltar"
+        android:layout_width="55px"
+        android:layout_height="55px"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="ATUALIZAÇÃO"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDataEnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/allerta"
+        android:text="enel 2020"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTelaInicial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="@color/common_google_signin_btn_text_dark_default"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewICON16"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/bnt_camera"
+                        android:paddingStart="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_action_icon_csi" />
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/allerta"
+                        android:text="ATUALIZANDO O LDF"
+                        android:textColor="@color/azul"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageViewICON16"
+                        app:layout_constraintTop_toTopOf="@+id/imageViewICON16" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="*Os dados só serão alterados após salvar."
+                        android:textColor="#757575"
+                        android:textSize="14sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView48"
+                        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+
+                    <EditText
+                        android:id="@+id/editText_ATT_ALIMENTADOR_TABLET"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/borda_azul"
+                        android:drawableLeft="@drawable/ic_action_icon_alimentador_blue"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="ALM:"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="8dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/azul"
+                        android:textColorHint="#DADADA"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                        app:layout_constraintStart_toStartOf="@+id/imageViewICON16"
+                        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+
+                    <EditText
+                        android:id="@+id/editText_ATT_RELIGADOR_TABLET"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/borda_azul"
+                        android:drawableLeft="@drawable/ic_action_icon_religador_blue"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="RLG:"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="8dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/azul"
+                        android:textColorHint="#DADADA"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/textView55"
+                        app:layout_constraintStart_toStartOf="@+id/guideline6"
+                        app:layout_constraintTop_toTopOf="@+id/editText_ATT_ALIMENTADOR_TABLET" />
+
+                    <EditText
+                        android:id="@+id/editText_ATT_TOMBAMENTO_TABLET"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/borda_azul"
+                        android:drawableLeft="@drawable/ic_action_icon_csi_blue"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="CSI:"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="8dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/azul"
+                        android:textColorHint="#DADADA"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                        app:layout_constraintStart_toStartOf="@+id/editText_ATT_ALIMENTADOR_TABLET"
+                        app:layout_constraintTop_toBottomOf="@+id/editText_ATT_ALIMENTADOR_TABLET" />
+
+                    <EditText
+                        android:id="@+id/editText_ATT_VALOR_DO_CURTO_TABLET"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@drawable/borda_azul"
+                        android:drawableLeft="@drawable/ic_action_icon_curtoi_blue"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="V. CURTO: 10000A"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="8dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/azul"
+                        android:textColorHint="#DADADA"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/editText_ATT_RELIGADOR_TABLET"
+                        app:layout_constraintStart_toStartOf="@+id/guideline6"
+                        app:layout_constraintTop_toTopOf="@+id/editText_ATT_TOMBAMENTO_TABLET" />
+
+
+                    <fragment
+                        android:id="@+id/mapATT_LDF"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="180dp"
+
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintEnd_toEndOf="@+id/switchA_ATT_MODE_TRIFASICO"
+                        app:layout_constraintStart_toStartOf="@+id/switchA_ATT_MODE_MONOFÁSICO"
+                        app:layout_constraintTop_toBottomOf="@+id/switchA_ATT_MODE_BIFÁSICO" />
+
+                    <ImageView
+                        android:id="@+id/imageView_ATT_MAP"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="#00A50808"
+                        app:layout_constraintBottom_toBottomOf="@+id/mapATT_LDF"
+                        app:layout_constraintEnd_toEndOf="@+id/mapATT_LDF"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/mapATT_LDF"
+                        app:layout_constraintTop_toTopOf="@+id/mapATT_LDF" />
+
+                    <EditText
+                        android:id="@+id/editText_ATT_CIDADE_TABLET"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/borda_azul"
+                        android:drawableLeft="@drawable/ic_action_icon_location_orange"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="CIDADE"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="8dp"
+                        android:textAlignment="center"
+                        android:textColor="#DA124DA5"
+                        android:textColorHint="#757575"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/mapATT_LDF"
+                        app:layout_constraintStart_toStartOf="@+id/editText_ATT_ALIMENTADOR_TABLET"
+                        app:layout_constraintTop_toBottomOf="@+id/mapATT_LDF" />
+
+
+                    <EditText
+                        android:id="@+id/editText_ATT_REGIAO_TABLET"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/borda_azul"
+                        android:drawableLeft="@drawable/ic_action_icon_regiao_orange"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="REGIÃO"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="8dp"
+                        android:textAlignment="center"
+                        android:textColor="#DA124DA5"
+                        android:textColorHint="#757575"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/mapATT_LDF"
+                        app:layout_constraintStart_toStartOf="@+id/editText_ATT_CIDADE_TABLET"
+                        app:layout_constraintTop_toBottomOf="@+id/editText_ATT_CIDADE_TABLET" />
+
+
+                    <EditText
+                        android:id="@+id/editText_ATT_LAT_TABLET"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/borda_azul"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="LAT: -37.93980874"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="#DA124DA5"
+                        android:textColorHint="#757575"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/editText_ATT_LONG_TABLET"
+                        app:layout_constraintStart_toStartOf="@+id/editText_ATT_ALIMENTADOR_TABLET"
+                        app:layout_constraintTop_toBottomOf="@+id/editText_ATT_REGIAO_TABLET" />
+
+                    <EditText
+                        android:id="@+id/editText_ATT_LONG_TABLET"
+                        android:layout_width="180dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/borda_azul"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="LONG: -5.11269731"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="#DA124DA5"
+                        android:textColorHint="#757575"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/editText_ATT_LAT_TABLET"
+                        app:layout_constraintEnd_toEndOf="@+id/editText_ATT_REGIAO_TABLET"
+                        app:layout_constraintTop_toTopOf="@+id/editText_ATT_LAT_TABLET" />
+
+                    <EditText
+                        android:id="@+id/editText_ATT_DISTANCIASE_TABLET"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/borda_azul"
+                        android:ems="10"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="DIST. SE: 00,9900 Km"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="#DA124DA5"
+                        android:textColorHint="#757575"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/mapATT_LDF"
+                        app:layout_constraintStart_toStartOf="@+id/editText_ATT_LAT_TABLET"
+                        app:layout_constraintTop_toBottomOf="@+id/editText_ATT_LONG_TABLET" />
+
+
+                    <EditText
+                        android:id="@+id/editText_ATT_DATA_ATT_TABLET"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/borda_azul"
+                        android:drawableLeft="@drawable/ic_action_icon_data_blue"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="DATA: 07/00/0000"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="8dp"
+                        android:textAlignment="center"
+                        android:textColor="#DA124DA5"
+                        android:textColorHint="#757575"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                        app:layout_constraintStart_toStartOf="@+id/editText_ATT_ALIMENTADOR_TABLET"
+                        app:layout_constraintTop_toBottomOf="@+id/editText_ATT_DISTANCIASE_TABLET" />
+
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintGuide_begin="215dp"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="384dp" />
+
+                    <Switch
+                        android:id="@+id/switchA_ATT_MODE_MONOFÁSICO"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:text="MONOFÁSICO"
+                        android:textColor="@color/laranja_enel"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                        app:layout_constraintStart_toStartOf="@+id/editText_ATT_TOMBAMENTO_TABLET"
+                        app:layout_constraintTop_toBottomOf="@+id/editText_ATT_TOMBAMENTO_TABLET" />
+
+
+                    <Switch
+                        android:id="@+id/switchA_ATT_MODE_BIFÁSICO"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:text="BIFÁSICO"
+                        android:textColor="@color/laranja_enel"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                        app:layout_constraintStart_toStartOf="@+id/guideline8"
+                        app:layout_constraintTop_toBottomOf="@+id/editText_ATT_VALOR_DO_CURTO_TABLET" />
+
+
+                    <Switch
+                        android:id="@+id/switchA_ATT_MODE_TRIFASICO"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="8dp"
+                        android:text="TRIFÁSICO"
+                        android:textColor="@color/laranja_enel"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/editText_ATT_VALOR_DO_CURTO_TABLET"
+                        app:layout_constraintStart_toStartOf="@+id/guideline9"
+                        app:layout_constraintTop_toBottomOf="@+id/editText_ATT_VALOR_DO_CURTO_TABLET" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="158dp" />
+
+                    <Switch
+                        android:id="@+id/switchA_ATT_MODE_REGISTRO_ATIVO"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:enabled="true"
+                        android:hapticFeedbackEnabled="false"
+                        android:soundEffectsEnabled="false"
+                        android:text="REGISTRO ATIVO?"
+                        android:textColor="@color/azul"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/editText_ATT_DATA_ATT_TABLET"
+                        app:layout_constraintEnd_toEndOf="@+id/editText_ATT_DISTANCIASE_TABLET"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/editText_ATT_DATA_ATT_TABLET"
+                        app:layout_constraintTop_toBottomOf="@+id/editText_ATT_DISTANCIASE_TABLET" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="286dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarRelatorio"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:indeterminateTint="@color/laranja_enel"
+                        app:layout_constraintBottom_toBottomOf="@+id/buttonATUALIZARLDF_TABLET"
+                        app:layout_constraintStart_toStartOf="@+id/buttonATUALIZARLDF_TABLET"
+                        app:layout_constraintTop_toTopOf="@+id/buttonATUALIZARLDF_TABLET" />
+
+                    <Button
+                        android:id="@+id/buttonATUALIZARLDF_TABLET"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bnt_camera"
+                        android:drawableRight="@drawable/ic_action_save"
+                        android:paddingRight="12dp"
+                        android:text="ATUALIZAR E ENVIAR"
+                        android:textSize="18sp"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/editText_ATT_DISTANCIASE_TABLET"
+                        app:layout_constraintStart_toStartOf="@+id/editText_ATT_DATA_ATT_TABLET"
+                        app:layout_constraintTop_toBottomOf="@+id/editText_ATT_DATA_ATT_TABLET" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonTelaInicial"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/fundo_btn_redondo"
+        android:drawableRight="@drawable/ic_action_home"
+        android:paddingRight="8dp"
+        android:text="CANCELAR ATUALIZAÇÃO"
+        android:textAlignment="center"
+        android:textColor="@color/azul"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDataEnel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

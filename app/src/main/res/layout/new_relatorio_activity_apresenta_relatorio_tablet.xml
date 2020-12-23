@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundosplash"
+    tools:context=".MVC.VIEW.RELATORIO.ApresentaRelatorioActivity">
+
+    <ImageView
+        android:id="@+id/imageViewVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDataEnel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewDATA_HORA_registro2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="07/07/2020 às 00:00"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/card_mapView_NEW_MAPS"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/card_historico_nomeCSI2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="CSI: SHD324"
+                android:textColor="@color/azul"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/card_imageView_IconRelatorio2"
+                app:layout_constraintTop_toTopOf="@+id/card_imageView_IconRelatorio2" />
+
+            <TextView
+                android:id="@+id/card_historico_nome_cidade2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="Limoeiro do Norte/Ce"
+                android:textColor="#757575"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_imageView_IconRelatorio2"
+                app:layout_constraintStart_toStartOf="@+id/card_historico_nomeCSI2"
+                app:layout_constraintTop_toBottomOf="@+id/card_historico_nomeCSI2" />
+
+            <ImageView
+                android:id="@+id/card_imageView_IconRelatorio2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/fundo_btn_redondo_laranja_enel"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/button_UpLoadRelatorio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/fundo_spiner_layout"
+                android:drawableTop="@drawable/ic_action_upload"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="REALIZAR ENVIO RELATÓRIO AO SERVIDOR"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/card_mapView_NEW_MAPS"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_historico_nome_cidade2" />
+
+            <fragment
+                android:id="@+id/map2"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/card_mapView_NEW_MAPS"
+                app:layout_constraintEnd_toEndOf="@+id/card_mapView_NEW_MAPS"
+                app:layout_constraintStart_toStartOf="@+id/card_mapView_NEW_MAPS"
+                app:layout_constraintTop_toTopOf="@+id/card_mapView_NEW_MAPS" />
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/button_UpLoadRelatorio"
+                app:layout_constraintEnd_toEndOf="@+id/card_mapView_NEW_MAPS"
+                app:layout_constraintStart_toStartOf="@+id/card_mapView_NEW_MAPS"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ScrollView
+                        android:id="@+id/scrollView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView52"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:paddingLeft="8dp"
+                                android:text="DESCRIÇÃO DA OCORRÊNCIA"
+                                android:textColor="#000"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:id="@+id/textView_NEW_apresenta_relatorio_DESCRICAO_OCORRENCIA"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/montserrat"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingBottom="8dp"
+                                android:text="TextViewsdfsdffgfdgdfgsdfgsdfgdfgfdgdfgfdgdfgfdgfokhfopdhspojhofpjhfpohjpfgojirtojrtnmlknmklvcblncvnbjjkfghkçfgjhkldfjglhkjtlrkçyjuçtykeujtlykçujlktyjueçtyjuçleytufgijhiofgjhoipfdjhdifoghiofdjghiofgjhpfoigjhiofjphdifoghpiofgjhfigjhfog"
+                                android:textColor="#757575"
+                                android:textSize="20sp" />
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/scrollView8">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="8dp"
+                            android:paddingBottom="8dp">
+
+                            <ImageView
+                                android:id="@+id/imageView_NEW_IMAGEM1"
+                                android:layout_width="350dp"
+                                android:layout_height="250dp"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <ImageView
+                                android:id="@+id/imageView_NEW_IMAGEM2"
+                                android:layout_width="350dp"
+                                android:layout_height="250dp"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <ImageView
+                                android:id="@+id/imageView_NEW_IMAGEM3"
+                                android:layout_width="350dp"
+                                android:layout_height="250dp"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+                            <ImageView
+                                android:id="@+id/imageView_NEW_IMAGEM4"
+                                android:layout_width="350dp"
+                                android:layout_height="250dp"
+                                tools:srcCompat="@tools:sample/avatars" />
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/card_mapView_NEW_MAPS"
+                app:layout_constraintTop_toBottomOf="@+id/card_mapView_NEW_MAPS">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp">
+
+                    <Button
+                        android:id="@+id/button_NEW_card_ALIMENTADOR"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/fundo_spiner_layout"
+                        android:drawableTop="@drawable/ic_action_alimentador"
+                        android:drawingCacheQuality="auto"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:text="ALM: TME01P2"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_NEW_card_RELIGADOR"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/fundo_spiner_layout"
+                        android:drawableTop="@drawable/ic_action_religador"
+                        android:drawingCacheQuality="auto"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:text="RLG: FNF7534"
+                        android:textSize="18sp" />
+
+
+                    <Button
+                        android:id="@+id/button_NEW_card_CSI"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/fundo_spiner_layout"
+                        android:drawableTop="@drawable/ic_action_icon_csi"
+                        android:drawingCacheQuality="auto"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:text="CSI: 170A"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_NEW_card_V_CURTO"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/fundo_spiner_layout"
+                        android:drawableTop="@drawable/ic_action_curto"
+                        android:drawingCacheQuality="auto"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:text="V. CURTO: 170A"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_NEW_card_T_CURTO"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/fundo_spiner_layout"
+                        android:drawableTop="@drawable/ic_action_tipo_curto"
+                        android:drawingCacheQuality="auto"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:text="T. CURTO: M"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/button_NEW_card_BR"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/fundo_spiner_layout"
+                        android:drawableTop="@drawable/ic_action_br_user"
+                        android:drawingCacheQuality="auto"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:text="RESP: BR0069963473"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewDataEnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/allerta"
+        android:text="enel 2020"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/allerta"
+        android:text="RELATÓRIO DA OCORRÊNCIA"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

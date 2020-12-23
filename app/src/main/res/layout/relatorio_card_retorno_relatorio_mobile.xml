@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="@+id/card_historico_valor_do_curto"
+                app:layout_constraintStart_toEndOf="@+id/card_historico_nomeAlimentador"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/titleNomeAlimentador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="Alimentador:"
+                android:textAlignment="textEnd"
+                android:textColor="@color/azul"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/card_historico_nomeAlimentador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="TME01P2"
+                android:textAlignment="textEnd"
+                android:textColor="@color/azul"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleNomeAlimentador"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/titleLocalizacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="Cidade:"
+                android:textColor="@color/azul"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/textView34"
+                app:layout_constraintTop_toBottomOf="@+id/card_historico_valor_do_curto" />
+
+            <ImageButton
+                android:id="@+id/card_historico_imageButton_Mapa"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/fundo_btn_redondo_laranja_enel"
+                android:drawingCacheQuality="high"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/card_historico_Localizacao"
+                app:layout_constraintStart_toStartOf="@+id/titleLocalizacao"
+                app:layout_constraintTop_toBottomOf="@+id/card_historico_Localizacao"
+                app:srcCompat="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/card_historico_Localizacao"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Limoeiro do Norte"
+                android:textColor="@color/azul"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleLocalizacao" />
+
+            <ImageButton
+                android:id="@+id/card_historico_imageButton_Delete"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#C00000"
+                android:drawingCacheQuality="high"
+                app:layout_constraintBottom_toBottomOf="@+id/card_historico_imageButton_View_Relatorio"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/card_historico_imageButton_View_Relatorio"
+                app:layout_constraintTop_toTopOf="@+id/card_historico_imageButton_View_Relatorio"
+                app:srcCompat="@drawable/ic_action_delete" />
+
+            <ImageButton
+                android:id="@+id/card_historico_imageButton_View_Relatorio"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/fundobotaoazul"
+                android:drawingCacheQuality="high"
+                app:layout_constraintBottom_toBottomOf="@+id/card_historico_imageButton_Mapa"
+                app:layout_constraintEnd_toEndOf="@+id/card_historico_hora"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/card_historico_imageButton_Mapa"
+                app:layout_constraintTop_toTopOf="@+id/card_historico_imageButton_Mapa"
+                app:layout_constraintVertical_bias="0.724"
+                app:srcCompat="@drawable/icon_list_relatorio" />
+
+            <TextView
+                android:id="@+id/titleData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="BR:"
+                android:textColor="@color/azul"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/divider3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/card_historico_br_colaborador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="BR0069963473"
+                android:textAlignment="center"
+                android:textColor="@color/azul"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/titleData"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/titleData"
+                app:layout_constraintTop_toBottomOf="@+id/titleData"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/titleHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="Data de envio:"
+                android:textColor="@color/azul"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/titleData"
+                app:layout_constraintTop_toBottomOf="@+id/card_historico_br_colaborador"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/card_historico_dataAtendimento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="00/00/2020"
+                android:textAlignment="gravity"
+                android:textColor="@color/azul"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/titleHora"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/titleHora"
+                app:layout_constraintTop_toBottomOf="@+id/titleHora"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="Religador:"
+                android:textColor="@color/azul"
+                app:layout_constraintStart_toStartOf="@+id/titleNomeAlimentador"
+                app:layout_constraintTop_toBottomOf="@+id/card_historico_nomeAlimentador" />
+
+            <TextView
+                android:id="@+id/card_historico_religador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="NG4093"
+                android:textColor="@color/azul"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/textView30"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="Tipo do curto:"
+                android:textColor="@color/azul"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/card_historico_nomeCSI"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/card_historico_tipo_de_curto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="Monofásico"
+                android:textColor="@color/azul"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/textView32"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="Curto:"
+                android:textColor="@color/azul"
+                app:layout_constraintStart_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/card_historico_religador" />
+
+            <TextView
+                android:id="@+id/card_historico_valor_do_curto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="190 A"
+                android:textColor="@color/azul"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView34"
+                app:layout_constraintTop_toBottomOf="@+id/textView34"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="@+id/divider2"
+                app:layout_constraintStart_toEndOf="@+id/card_historico_tipo_de_curto"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="Horario de envio:"
+                android:textColor="@color/azul"
+                app:layout_constraintStart_toStartOf="@+id/titleHora"
+                app:layout_constraintTop_toBottomOf="@+id/card_historico_dataAtendimento" />
+
+            <TextView
+                android:id="@+id/card_historico_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="00:00 PM"
+                android:textColor="@color/azul"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/textView36"
+                app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="CSI:"
+                android:textColor="@color/azul"
+                app:layout_constraintStart_toEndOf="@+id/divider2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/card_historico_nomeCSI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/allerta"
+                android:text="SHD324"
+                android:textColor="@color/azul"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/textView38"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/card_historico_distancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/ubuntu"
+                android:text="Visualizar"
+                app:layout_constraintBottom_toBottomOf="@+id/card_historico_imageButton_Mapa"
+                app:layout_constraintEnd_toEndOf="@+id/card_historico_imageButton_Mapa"
+                app:layout_constraintStart_toStartOf="@+id/card_historico_imageButton_Mapa" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
